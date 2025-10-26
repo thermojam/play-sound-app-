@@ -1,0 +1,42 @@
+body {
+    font-family: Roboto, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image .3s ease;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 50px 80px;
+    border-radius: 18px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.sound-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background: #eee;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background .2s;
+}
+
+.sound-btn.active {
+    background: #444c4f;
+    color: white;
+}
+
+input[type="range"] {
+    width: 200px;
+}
